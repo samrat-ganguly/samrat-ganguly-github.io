@@ -1,1 +1,1 @@
-# samrat-ganguly-github.io
+# samrat-ganguly.github.io
