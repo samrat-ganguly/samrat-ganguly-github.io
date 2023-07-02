@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/profile/profile_icon.png" />
+    <link rel="icon" href="./images/profile/profile_icon2.png" />
     <link rel="stylesheet" href="./CSS/portfolio_style.css" />
     <script
       type="module"
@@ -39,58 +39,60 @@
     <section id="header">
       <div class="header">
         <ul>
-          <li style="--i: #a955ff; --j: #ea51ff">
-            <span class="icon">
-              <ion-icon name="home"></ion-icon>
-            </span>
-            <a href="#hero">Home</a>
-          </li>
-          <li style="--i: #ffa9c6; --j: #f434e2">
-            <span class="icon">
-              <ion-icon name="heart-half"></ion-icon>
-            </span>
-            <a href="#services">Favourites</a>
-          </li>
-          <li style="--i: #56ccf2; --j: #2f80ed">
-            <span class="icon">
-              <ion-icon name="paper"></ion-icon>
-            </span>
-            <a href="#projects">Projects</a>
-          </li>
-          <li style="--i: #80ff72; --j: #7ee8fa">
-            <span class="icon">
-              <ion-icon name="person"></ion-icon>
-            </span>
-            <a href="#about">About</a>
-          </li>
-          <li style="--i: #ff9966; --j: #ff5e62">
-            <span class="icon">
-              <ion-icon name="paper-plane"></ion-icon>
-            </span>
-            <a href="#contact">Contact</a>
-          </li>
+          <a href="#hero">
+            <li style="--i: #a955ff; --j: #ea51ff">
+              <div class="icon"><ion-icon name="home"></ion-icon></div>
+              <div class="text">Home</div>
+            </li>
+          </a>
+
+          <a href="#services">
+            <li style="--i: #ffa9c6; --j: #f434e2">
+              <div class="icon">
+                <ion-icon name="heart-half"></ion-icon>
+              </div>
+              <div class="text">Favourites</div>
+            </li>
+          </a>
+
+          <a href="#projects">
+            <li style="--i: #56ccf2; --j: #2f80ed">
+              <div class="icon">
+                <ion-icon name="paper"></ion-icon>
+              </div>
+              <div class="text">Projects</div>
+            </li>
+          </a>
+
+          <a href="#about">
+            <li style="--i: #80ff72; --j: #7ee8fa">
+              <div class="icon">
+                <ion-icon name="person"></ion-icon>
+              </div>
+              <div class="text">About</div>
+            </li>
+          </a>
+
+          <a href="#contact">
+            <li style="--i: #ff9966; --j: #ff5e62">
+              <div class="icon">
+                <ion-icon name="paper-plane"></ion-icon>
+              </div>
+              <div class="text">Contact</div>
+            </li>
+          </a>
         </ul>
       </div>
     </section>
 
     <!-- Hero Section  -->
     <section id="hero">
-      <div
-        class="hero container"
-        data-parallax="scroll"
-        data-image-src="portfolio1.webp"
-      >
+      <div class="hero container">
         <div class="intro">
           <h1 style="--i: #ea51ff">Hiii...!! <span></span></h1>
           <h1 style="--i: #7ee8fa">My name is <span></span></h1>
           <h1 style="--i: crimson">Samrat <span></span></h1>
         </div>
-        <!-- box animation at the bottom  -->
-        <div class="overlay"></div>
-        <div class="overlay1"></div>
-        <div class="overlay2"></div>
-        <div class="overlay3"></div>
-        <!-- box animation at the bottom  -->
       </div>
     </section>
 
@@ -175,7 +177,7 @@
           <br /><br /><br />
         </div>
         <div class="all-projects">
-          <div class="project-item interactable">
+          <div class="project-item">
             <div class="project-info">
               <a
                 id="project-link"
@@ -205,7 +207,7 @@
             </div>
           </div>
 
-          <div class="project-item interactable">
+          <div class="project-item">
             <div class="project-info">
               <a
                 id="project-link"
@@ -231,7 +233,7 @@
             </div>
           </div>
 
-          <div class="project-item interactable">
+          <div class="project-item">
             <div class="project-info">
               <a
                 id="project-link"
@@ -247,18 +249,18 @@
                 SASS
               </p>
             </div>
-            <div class="project-img" style="--i: #c0e4e0">
+            <div class="project-img" style="--i: darksmoke">
               <a
                 id="project-link"
                 href="https://sarmisfoodlab.vercel.app/"
                 target="_blank"
               >
-                <img src="./images/projects/project3.jpg" alt="img" />
+                <img src="./images/projects/project31.jpg" alt="img" />
               </a>
             </div>
           </div>
 
-          <div class="project-item interactable">
+          <div class="project-item">
             <div class="project-info">
               <a
                 id="project-link"
@@ -293,7 +295,7 @@
         <div class="col-left">
           <div class="about-img">
             <img
-              class="interactable"
+              class=""
               data-type="profile"
               src="./images/about/sam.jpeg"
               alt="img"
@@ -302,7 +304,7 @@
         </div>
         <div class="col-right">
           <div class="title">
-            <h1 class="section-title">About me</h1>
+            <h1 class="section-title">Abo<span>u</span>t me</h1>
           </div>
           <br /><br /><br /><br />
           <div class="info">
@@ -316,8 +318,7 @@
                 If you have any suggestions feel free to contact me :)
               </p>
               <br /><br />
-              <a class="interactable" href="" target="_blank">DOWNLOAD CV</a
-              ><br />
+              <a href="" target="_blank">DOWNLOAD CV</a><br />
             </div>
           </div>
         </div>
@@ -328,7 +329,7 @@
     <section id="contact">
       <div class="contact container">
         <div>
-          <h1 class="section-title zoom">Contact Info</h1>
+          <h1 class="section-title zoom">Conta<span>c</span>t Info</h1>
           <br /><br /><br /><br />
         </div>
         <div class="contact-items">
@@ -411,16 +412,19 @@
       distance: "50px",
       origin: "top",
     });
+
     ScrollReveal().reveal(".project", {
       duration: 1000,
       delay: 2000,
     });
+
     ScrollReveal().reveal(".left", {
       duration: 1500,
       delay: 500,
       distance: "40px",
       origin: "left",
     });
+
     ScrollReveal().reveal(".right", {
       duration: 1500,
       delay: 500,
@@ -428,14 +432,9 @@
       origin: "right",
     });
 
-    ScrollReveal().reveal(".project-info", {
-      duration: 1500,
+    ScrollReveal().reveal(".project-item", {
+      duration: 3000,
       delay: 300,
-      scale: 0,
-    });
-    ScrollReveal().reveal(".project-img", {
-      duration: 2000,
-      delay: 500,
       scale: 0,
     });
 
@@ -445,6 +444,7 @@
       distance: "40px",
       origin: "left",
     });
+
     ScrollReveal().reveal(".info", {
       duration: 1500,
       delay: 500,
