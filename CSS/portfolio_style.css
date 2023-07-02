@@ -148,7 +148,7 @@ p {
   height: 100vh;
   position: fixed;
   z-index: 100;
-  background: #fff url("../loader2.gif");
+  background: #fff url("../images/loader/loader.gif");
   background-size: cover;
   background-position: center;
   overflow: hidden;
