@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 :root {
   --bar-color: #fff;
   --ball-color: #fff;
@@ -21,7 +22,6 @@
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
 }
-
 *,
 *::after,
 *::before {
@@ -29,23 +29,19 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 * body::-webkit-scrollbar {
   width: 12px;
   overflow: hidden;
 }
-
 body::-webkit-scrollbar-track {
-  background: hsla(0deg, 0%, 2%, 0);
+  background: hsla(0, 0%, 2%, 0);
 }
-
 body::-webkit-scrollbar-thumb {
   background-color: darkgray;
   border-radius: 25px;
 }
-
 body::-webkit-scrollbar-thumb:hover {
-  background: hsl(0deg, 0%, 60%);
+  background: hsl(0, 0%, 60%);
   height: 90px;
 }
 
@@ -84,8 +80,7 @@ a {
 img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 p {
@@ -107,8 +102,6 @@ p {
   margin: auto;
   letter-spacing: 0.2rem;
   text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 0 30px;
   height: 8rem;
@@ -118,7 +111,6 @@ p {
   transition: 0.5s;
   bottom: 100px;
 }
-
 .zoom:hover {
   transform: scale(110%);
 }
@@ -144,12 +136,12 @@ p {
     padding: 0 5px;
   }
 }
+
 .brand h1 {
   font-size: 1rem;
   text-transform: uppercase;
   color: white;
 }
-
 .brand h1 span {
   color: crimson;
 }
@@ -161,12 +153,10 @@ p {
   z-index: 100;
   background: #fff url(4.gif) no-repeat center center;
 }
-
 body {
   height: 100vh;
   margin: 0px;
 }
-
 #trailer {
   height: 20px;
   width: 20px;
@@ -182,11 +172,9 @@ body {
   display: grid;
   place-items: center;
 }
-
 body:hover > #trailer {
   opacity: 1;
 }
-
 #trailer:not([data-type=""]) > #trailer-icon {
   opacity: 1;
 }
@@ -235,6 +223,7 @@ body:hover > #trailer {
     cursor: pointer;
   }
 }
+
 #header .header ul li {
   position: relative;
   list-style: none;
@@ -248,7 +237,6 @@ body:hover > #trailer {
   align-items: center;
   transition: 0.5s;
 }
-
 #header .header ul li:hover {
   width: 110px;
   background: linear-gradient(45deg, var(--i), var(--j));
@@ -306,11 +294,11 @@ body:hover > #trailer {
   transform: scale(1);
   transition-delay: 0.25s;
 }
-
 /* End Header section */
+
 /* Hero Section */
 #hero {
-  background-image: url("portfolio1.webp");
+  background-image: url("../images/hero/portfolio1.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: top center;
@@ -333,27 +321,13 @@ body:hover > #trailer {
 
 #hero h1 {
   display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   font-size: 7rem;
   position: relative;
   color: transparent;
-  -webkit-animation: text_reveal 0.5s ease forwards;
-          animation: text_reveal 0.5s ease forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1s;
 }
-
-@-webkit-keyframes text_reveal {
-  100% {
-    color: white;
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: black;
-  }
-}
-
 @keyframes text_reveal {
   100% {
     color: white;
@@ -362,32 +336,17 @@ body:hover > #trailer {
     -webkit-text-stroke-color: black;
   }
 }
+
 #hero h1:nth-child(1) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
 }
-
 #hero h1:nth-child(2) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  animation-delay: 2s;
 }
-
 #hero h1:nth-child(3) {
-  -webkit-animation: text_reveal_name 0.5s ease forwards;
-          animation: text_reveal_name 0.5s ease forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3s;
 }
-
-@-webkit-keyframes text_reveal_name {
-  100% {
-    color: crimson;
-    font-weight: 500;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-  }
-}
-
 @keyframes text_reveal_name {
   100% {
     color: crimson;
@@ -396,6 +355,7 @@ body:hover > #trailer {
     -webkit-text-stroke-color: black;
   }
 }
+
 #hero h1 span {
   position: absolute;
   top: 0;
@@ -404,23 +364,9 @@ body:hover > #trailer {
   width: 0;
   background-color: var(--i);
   border-radius: 20px 0;
-  -webkit-animation: text_reveal_box 0.8s ease;
-          animation: text_reveal_box 0.8s ease;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation: text_reveal_box 0.8s ease;
+  animation-delay: 0.5s;
 }
-
-@-webkit-keyframes text_reveal_box {
-  50% {
-    width: 100%;
-    left: 0;
-  }
-  100% {
-    width: 0;
-    left: 100%;
-  }
-}
-
 @keyframes text_reveal_box {
   50% {
     width: 100%;
@@ -431,19 +377,15 @@ body:hover > #trailer {
     left: 100%;
   }
 }
+
 #hero h1:nth-child(1) span {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
-
 #hero h1:nth-child(2) span {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
-
 #hero h1:nth-child(3) span {
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }
 
 .overlay {
@@ -472,25 +414,8 @@ body:hover > #trailer {
   opacity: 0.9;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  -webkit-animation: vibrate 2s infinite;
-          animation: vibrate 2s infinite;
+  animation: vibrate 2s infinite;
 }
-
-@-webkit-keyframes vibrate {
-  0% {
-    right: 13%;
-    bottom: 40%;
-  }
-  50% {
-    right: 14%;
-    bottom: 37%;
-  }
-  100% {
-    right: 13%;
-    bottom: 40%;
-  }
-}
-
 @keyframes vibrate {
   0% {
     right: 13%;
@@ -505,6 +430,7 @@ body:hover > #trailer {
     bottom: 40%;
   }
 }
+
 .overlay2 {
   background: white;
   position: absolute;
@@ -516,22 +442,8 @@ body:hover > #trailer {
   padding: 0;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  -webkit-animation: vibrate1 2s infinite;
-          animation: vibrate1 2s infinite;
+  animation: vibrate1 2s infinite;
 }
-
-@-webkit-keyframes vibrate1 {
-  0% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0.3;
-  }
-}
-
 @keyframes vibrate1 {
   0% {
     opacity: 0.3;
@@ -543,6 +455,7 @@ body:hover > #trailer {
     opacity: 0.3;
   }
 }
+
 .overlay3 {
   background: white;
   position: absolute;
@@ -554,10 +467,8 @@ body:hover > #trailer {
   padding: 0;
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  -webkit-animation: vibrate1 3s infinite;
-          animation: vibrate1 3s infinite;
+  animation: vibrate1 3s infinite;
 }
-
 @keyframes vibrate1 {
   0% {
     opacity: 0.3;
@@ -569,6 +480,7 @@ body:hover > #trailer {
     opacity: 0.3;
   }
 }
+
 @media (max-width: 800px) {
   #hero .hero {
     justify-content: center;
@@ -578,15 +490,8 @@ body:hover > #trailer {
   }
   #hero h1 {
     font-size: 5rem;
-    -webkit-animation: text_reveal 0.5s ease forwards;
-            animation: text_reveal 0.5s ease forwards;
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s;
-  }
-  @-webkit-keyframes text_reveal {
-    100% {
-      color: black;
-    }
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1s;
   }
   @keyframes text_reveal {
     100% {
@@ -600,20 +505,6 @@ body:hover > #trailer {
   .overlay1 {
     right: 46%;
     bottom: 6%;
-  }
-  @-webkit-keyframes vibrate {
-    0% {
-      right: 46%;
-      bottom: 6%;
-    }
-    50% {
-      right: 49%;
-      bottom: 3%;
-    }
-    100% {
-      right: 46%;
-      bottom: 6%;
-    }
   }
   @keyframes vibrate {
     0% {
@@ -639,13 +530,14 @@ body:hover > #trailer {
   }
 }
 /* End Hero Section */
+
 /* Services Section */
 #services .services {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 50px 0;
-  background-image: url("5.jpg");
+  background-image: url("../images/services/services_bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -697,15 +589,12 @@ body:hover > #trailer {
   transition: 0.5s;
   transform: scale(100%);
 }
-
 #services .service-item #img1 {
   width: 165px;
 }
-
 #services .service-item #img2 {
   width: 90px;
 }
-
 #services .service-item #img4 {
   transform: scale(110%);
 }
@@ -713,15 +602,12 @@ body:hover > #trailer {
 #services .service-item img:hover {
   transform: scale(110%);
 }
-
 #services .service-item #img1:hover {
   transform: scale(110%);
 }
-
 #services .service-item #img2:hover {
   transform: scale(110%);
 }
-
 #services .service-item #img4:hover {
   transform: scale(120%);
 }
@@ -759,6 +645,7 @@ body:hover > #trailer {
   }
 }
 /* End Services Section */
+
 /* Projects section */
 #projects .projects {
   flex-direction: column;
@@ -820,7 +707,6 @@ body:hover > #trailer {
   position: relative;
   text-align: center;
 }
-
 #projects .project-info h1::after {
   content: "Click To Open Project";
   font-size: 1.4rem !important;
@@ -838,7 +724,6 @@ body:hover > #trailer {
   transform: scale(0);
   transition: transform ease-out 0.25s, bottom ease-out 0.25s;
 }
-
 #projects .project-info h1:hover::after,
 #projects .project-info h1:focus::after {
   transform: scale(1);
@@ -886,6 +771,7 @@ body:hover > #trailer {
     height: 100%;
     gap: 20px;
   }
+
   #projects .project-info {
     padding: 30px;
     height: 100%;
@@ -898,6 +784,7 @@ body:hover > #trailer {
     border-radius: 40px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   }
+
   #projects .project-img {
     width: 320px;
     margin-bottom: 40px;
@@ -917,6 +804,7 @@ body:hover > #trailer {
   }
 }
 /* End Projects section */
+
 /* About Section */
 #about .about {
   display: flex;
@@ -946,11 +834,9 @@ body:hover > #trailer {
   transform: scale(100%);
   box-shadow: 5px 5px 20px darkgrey;
 }
-
 #about .col-left .about-img img:hover {
   transform: scale(110%);
 }
-
 #about .col-left .about-img::after {
   content: "";
   position: absolute;
@@ -965,17 +851,7 @@ body:hover > #trailer {
 
 #about .about .title {
   transform: scale(100%);
-  -webkit-animation: vibrate2 0.9s infinite alternate;
-          animation: vibrate2 0.9s infinite alternate;
-}
-
-@-webkit-keyframes vibrate2 {
-  0% {
-    transform: scale(100%);
-  }
-  100% {
-    transform: scale(110%);
-  }
+  animation: vibrate2 0.9s infinite alternate;
 }
 
 @keyframes vibrate2 {
@@ -986,6 +862,7 @@ body:hover > #trailer {
     transform: scale(110%);
   }
 }
+
 #about .col-right h2 {
   font-family: "Signika", sans-serif;
   font-size: 40px;
@@ -1022,12 +899,10 @@ body:hover > #trailer {
   border: 2px solid crimson;
   transition: 0.5s ease;
 }
-
 #about .details a:hover {
   background: crimson;
   color: white;
 }
-
 @media (max-width: 1050px) {
   #about .about {
     display: flex;
@@ -1051,6 +926,7 @@ body:hover > #trailer {
   }
 }
 /* End About Section */
+
 /* Contact Section */
 #contact .contact {
   flex-direction: column;
@@ -1081,9 +957,8 @@ body:hover > #trailer {
   width: 30%;
   background: white;
 }
-
 #contact .contact-item:hover {
-  box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.1725490196);
+  box-shadow: 0px 0px 5px 0 #0000002c;
 }
 
 #contact .contact-item .icon {
@@ -1092,8 +967,7 @@ body:hover > #trailer {
 }
 
 #contact .contact-item .icon img {
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 #contact .contact-info {
@@ -1132,6 +1006,7 @@ body:hover > #trailer {
   }
 }
 /*End Contact Section */
+
 /* Footer */
 #footer {
   background-image: linear-gradient(90deg, #ab436a, #774475, #3b4278, #2c407c);
@@ -1142,12 +1017,10 @@ body:hover > #trailer {
   flex-direction: column;
   padding: 50px 0 10px 0;
 }
-
 #footer .brand h1 span {
   font-family: "Signika", sans-serif;
   letter-spacing: 2px;
 }
-
 #footer .brand span {
   color: white;
   font-size: 40px;
@@ -1155,7 +1028,6 @@ body:hover > #trailer {
   font-family: "PT Sans", sans-serif;
   transition: 0.5s;
 }
-
 #footer .brand span:hover {
   color: crimson;
   font-size: 60px;
@@ -1188,7 +1060,6 @@ body:hover > #trailer {
   border-radius: 50%;
   transition: 0.5s;
 }
-
 #footer img:hover {
   background: none;
 }
@@ -1210,6 +1081,7 @@ body:hover > #trailer {
   }
 }
 /*End Footer Section*/
+
 /* Scroll Tracker */
 body .scroll-tracker {
   position: fixed;
@@ -1218,4 +1090,4 @@ body .scroll-tracker {
   background: linear-gradient(to right, orange 50%, crimson 100%);
   transform-origin: left;
   z-index: 500;
-}/*# sourceMappingURL=portfolio_style.css.map */
+}
