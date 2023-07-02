@@ -269,7 +269,7 @@ p {
 /* Hero Section */
 #hero {
   // background-image: url("../images/hero/portfolio1.webp");
-  background-image: url("../2.png");
+  background-image: url("../images/hero/portfolio.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -419,11 +419,10 @@ p {
     margin: 0 auto;
     padding: 50px 0;
     // background-image: url("../images/services/services_bg.jpg");
-    background-image: url("../1.gif");
+    background-image: url("../images/services/services_bg.gif");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    position: relative;
   }
 
   .service-top p {
