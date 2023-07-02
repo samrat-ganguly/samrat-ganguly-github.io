@@ -328,7 +328,7 @@ p {
     height: 100%;
     width: 0;
     background-color: var(--i);
-    border-radius: 20px 0;
+    // border-radius: 20px 0;
     animation: text_reveal_box 0.8s ease;
     animation-delay: 0.5s;
   }
